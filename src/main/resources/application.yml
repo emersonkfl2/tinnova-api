@@ -1,0 +1,33 @@
+server:
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: api
+
+  mvc:
+    converters:
+      preferred-json-mapper: jackson
+
+  datasource:
+    hikari:
+      connection-test-query: SELECT 1
+      minimum-idle: 1
+      maximum-pool-size: 15
+      pool-name: platform-database-pool
+      auto-commit: false
+      connection-timeout: 30000
+    url: "jdbc:postgresql://0.0.0.0:5432/veiculos_database"
+    username: admin
+    password: admin
+    type: com.zaxxer.hikari.HikariDataSource
+
+    jpa:
+      database: POSTGRESQL
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      properties.hibernate:
+        jdbc.lob.non_contextual_creation: true
+        show_sql: true
+        format_sql: true
+        default_schema: veiculos_schema
