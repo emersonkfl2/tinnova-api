@@ -23,7 +23,7 @@ TOs seguintes endpoints estão disponíveis
 - `POST /veiculos`: Cria um novo veículo na base de dados.
 - `PUT /veiculos/{id}`: Altera um veículo existente
 - `PATCH /veiculos/{id}`: Altera dados específicos de um veículo com base no body da requisição
-- `DELETE /veiculos/{id}` : deletes an article by ID.
+- `DELETE /veiculos/{id}`: deleta um veículo pelo ID.
 
 ## Como rodar o projeto
 1. Clone os repositório usando`git clone https://github.com/emersonkfl2/tinnova-api.git`
