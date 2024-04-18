@@ -26,7 +26,7 @@ TOs seguintes endpoints estão disponíveis
 - `DELETE /veiculos/{id}` : deletes an article by ID.
 
 ## Como rodar o projeto
-1. Clone os repositório usando`git clone https://github.com/emersonkfl2/`
+1. Clone os repositório usando`git clone https://github.com/emersonkfl2/tinnova-api.git`
 2. Vá para a raíz do diretório co o comando `cd tinnova-api`
 2. Abra a pasta `docker` no terminal e rode o comando `sudo docker compose up` para iniciar o banco de dados
 3. Rode o comando `mvn clean install` para buildar o projeto
